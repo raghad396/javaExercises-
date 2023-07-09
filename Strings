@@ -1,0 +1,44 @@
+// Write a Java program which reads
+//• a String from keyboard
+//• and a char from keyboard
+//• and write number of chars in the string to the screen
+
+public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		String s1;
+
+		char ch1;
+
+		int i = 0;
+
+		int count =0;
+
+		System.out.println("Enter the string: ");
+
+		s1= sc.next();
+
+		System.out.println("Enter the char: ");
+
+		ch1= sc.next().charAt(0); 
+
+		while (i<s1.length()) {
+
+			if(s1.charAt(i)==ch1) {
+
+				count++ ;
+
+			}
+
+			i++;
+
+		}
+
+		System.out.println("Number of char is: " + count);
+
+		
+
+	}
+
+}
